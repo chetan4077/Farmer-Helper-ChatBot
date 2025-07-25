@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #2fc2ae;
+}
+
+#back-ball {
+  left: -2rem;
+  top: -7rem;
+  height: 900px;
+  width: 900px;
+  filter: blur(60px);
+}
+
+#back-ball-2 {
+  right: 0;
+  bottom: 0;
+  height: 600px;
+  width: 600px;
+  filter: blur(60px);
+}
+
+#backdrop {
+  backdrop-filter: blur(100px);
+  background-color: rgba(33, 65, 147, 0.226);
+  filter:blur(90px);
+  box-shadow: #1242c4;
+}
+
+#chatscreen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#chatContainer {
+  max-width: 100%; 
+  word-wrap: break-word;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#chatContainer.self {
+  align-self: flex-end;
+  background: color rgb(64, 161, 190);
+  
+
+}
+
+#chatContainer:not(.self) {
+  align-self: flex-start;
+  background-color: #2767a3;
+  filter: drop-shadow(70px); 
+}
+
+
+#chatscreen::-webkit-scrollbar {
+  width: 1px;
+}
+
+#chatscreen::-webkit-scrollbar-thumb {
+  background-color: #075a83;
+  border-radius: 10px;
+}
+
+#input-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px; 
+  background-color: rgba(14, 157, 228, 0.882);
+  z-index: 10; 
+}
+
